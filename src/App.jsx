@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HomeBlue from "./pages/HomeBlue";
-import HomeGreen from "./pages/HomeGreen";
+//import HomeGreen from "./pages/HomeGreen";
 import Navbar from "./components/Navbar";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div>
       <Navbar env={env} setEnv={setEnv} />
-      {env === "blue" ? <HomeBlue /> : <HomeGreen />}
+      { <HomeBlue />}
     </div>
   );
 }
